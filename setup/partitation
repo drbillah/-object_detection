@@ -1,0 +1,16 @@
+Crate partitation:
+$ sudo fdisk /dev/xvdb
+press: p (partitation) ->  Output: Disk /dev/xvdb
+press : n (new) Output: partition type..
+press: p
+press: enter
+press: enter
+press: enter -> Output: Create a new partition 1
+press: w
+
+Mount the memory to directory
+$ sudo mkfs.ext4 /dev/xvdb1 
+$ mkdir payload
+$ sudo mount /dev/xvdb1 payload
+$ sudo chmod a+rwx payload
+$ cd payload
