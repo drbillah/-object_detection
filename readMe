@@ -1,3 +1,7 @@
 setup - Amazon ec2 setup file
 config - Yolo configuration file
 traning - yolov3 custom image traning command
+
+anchor cal
+darknet.exe detector calc_anchors data/obj.data -num_of_clusters 9 -width 416 -height 416
+./darknet detector calc_anchors face/face.data -num_of_clusters 9 -width 416 -height 416
